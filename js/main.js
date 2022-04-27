@@ -99,8 +99,8 @@ function init(left, top) {
 function initFood() {
     // 随机生成位置
     let random = Math.random();
-    let left = parseInt(random * bodyWidth / dist) * dist + dist;
-    let top = parseInt(random * bodyheight / dist) * dist + dist;
+    let left = parseInt(random * bodyWidth / dist) * dist;
+    let top = parseInt(random * bodyheight / dist) * dist;
     // 校验生成位置是否在蛇内部，如果在则重新生成
 
     if (isInSnake(left, top)) {
